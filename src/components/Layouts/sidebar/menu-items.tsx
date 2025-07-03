@@ -6,18 +6,29 @@ import { MenuItem } from './types';
 
 export const menuItems: MenuItem[] = [
   {
-    title: 'Dashboard',
+    title: "Dashboard",
     icon: <DashboardIcon />,
-    link: '/',
+    link: "/",
   },
   {
-    title: 'Manage Farmers',
+    title: "Manage Farmers",
     icon: <UsersIcon />,
     submenu: true,
     submenuItems: [
       {
-        title: 'Pending Approvals',
-        link: '/farmers/pending-approvals',
+        title: "Pending Approvals",
+        link: "/farmers/pending-approvals",
+      },
+    ],
+  },
+  {
+    title: "Manage Investors",
+    icon: <UsersIcon />,
+    submenu: true,
+    submenuItems: [
+      {
+        title: "Pending Approvals",
+        link: "/investors/pending-approvals",
       },
     ],
   },

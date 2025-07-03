@@ -1,31 +1,32 @@
 import { MenuItem } from '../types';
-import { HomeIcon, FarmersIcon, CalendarIcon, SettingsIcon } from './icons';
+import { HomeIcon, FarmersIcon } from './icons';
 
 export const menuItems: MenuItem[] = [
   {
-    title: 'Dashboard',
-    path: '/',
+    title: "Dashboard",
+    path: "/",
     icon: HomeIcon,
   },
   {
-    title: 'Manage Farmers',
+    title: "Manage Farmers",
     icon: FarmersIcon,
     submenu: true,
     submenuItems: [
       {
-        title: 'Pending Approvals',
-        path: '/farmers/pending-approvals',
+        title: "Pending Approvals",
+        path: "/farmers/pending-approvals",
       },
     ],
   },
   {
-    title: 'Calendar',
-    path: '/calendar',
-    icon: CalendarIcon,
-  },
-  {
-    title: 'Settings',
-    path: '/pages/settings',
-    icon: SettingsIcon,
+    title: "Manage Investors",
+    icon: FarmersIcon,
+    submenu: true,
+    submenuItems: [
+      {
+        title: "Pending Approvals",
+        path: "/investors/pending-approvals",
+      },
+    ],
   },
 ];

@@ -43,11 +43,7 @@ const Header = ({ sidebarOpen, setSidebarOpen }: HeaderProps) => {
         {/* Right side - Icons and user info */}
         <div className="flex items-center gap-3 2xsm:gap-7 ml-auto">
           <ul className="flex items-center gap-2 2xsm:gap-4">
-            {/* <!-- Notification Menu Area --> */}
-            <li>
-              <Notification />
-            </li>
-            {/* <!-- Notification Menu Area --> */}
+
 
             {/* <!-- Dark Mode Toggler --> */}
             <li>
